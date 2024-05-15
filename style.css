@@ -10,14 +10,22 @@
 
 /*NavBar */
 
-.navbar {
+.nav {
     background-color: #FFFFF0;
+    color: black;
 }
 
 .nav-link {
     font-family: Fredoka;
     font-size: 16px;
+    margin-top: 30px;
+    color: black;
 }
+
+.nav-link:active {
+    color: black;
+}
+
 
 /*Heading */
 
