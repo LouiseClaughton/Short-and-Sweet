@@ -3,11 +3,6 @@
     padding: 0;
 }
 
-@font-face {
-    font-family: 'Watermelon';
-    src: url(fonts/Watermelon-Regular.otf) format('otf');
-}
-
 body {
     overflow-x: hidden;
 }
@@ -52,9 +47,9 @@ body {
 
 #heading-title {
     color:white;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 64px;
-    font-family: Watermelon;
+    font-family: Blinker;
     margin:300px 20px 20px 0px;
     z-index: 1;
 }
@@ -66,6 +61,7 @@ body {
     font-size: 16px;
     color: white;
     z-index: 1;
+    transition-delay: 100ms;
 }
 
 /*Products Section */
@@ -73,11 +69,18 @@ body {
 #products {
     margin-top: 150px;
     background-color: #FFFFF0;
+    position: relative;
+    z-index: 5;
 }
 
 .product-name {
     font-family: Fredoka;
     font-size: 18px;
+}
+
+.product-img:hover {
+    transform: translateY(-10%);
+    transition: 1s;
 }
 
 /*Testimonial Section */
@@ -97,7 +100,7 @@ body {
 }
 
 .quote {
-    font-family: Fredoka;
+    font-family: Blinker;
     font-weight: 600;
     font-size: 32px;
 }
@@ -121,6 +124,11 @@ body {
     padding-bottom: 50px;
     font-family: Fredoka;
     font-size: 16px;
+}
+
+.team-img:hover {
+    transform: translateY(-5%);
+    transition: 1s;
 }
 
 /*Contact Section */
@@ -238,4 +246,28 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid transparent;
     border-radius: 30px;
     margin: 0 auto;
+}
+
+/*** Animations ***/
+
+.hidden { /* Default style makes everything hidden */
+    opacity: 0;
+    transition: all 1s;
+}
+
+.right-slide { /* Animation to slide in from the right */
+    transform: translateX(100%);
+}
+
+.left-slide { /* Animation to slide in all the way from the left */
+    transform: translateX(-100%);
+}
+
+.part-left-slide { /* Animation to slide in part way from the left */
+    transform: translateX(-20%);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
 }
