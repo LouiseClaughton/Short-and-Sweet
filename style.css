@@ -7,6 +7,11 @@ body {
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: 'Watermelon';
+    src: url(fonts/Watermelon-Regular.otf);
+}
+
 /*NavBar */
 
 .nav {
@@ -19,10 +24,6 @@ body {
     margin-top: 30px;
     color: white;
     opacity: 1;
-}
-
-.nav-link:active {
-    color: black;
 }
 
 .bg-img {
@@ -47,9 +48,9 @@ body {
 
 #heading-title {
     color:white;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     font-size: 64px;
-    font-family: Blinker;
+    font-family: Watermelon;
     margin:300px 20px 20px 0px;
     z-index: 1;
 }
@@ -163,6 +164,14 @@ body {
     font-size: 18px;
     padding: 5px 10px;
     z-index: 2;
+}
+
+.button-pink:hover,
+.button-white:hover,
+.about:hover,
+.products:hover {
+    filter: brightness(0.9);
+    transition-duration: 0.5s;
 }
 
 .button-white {
