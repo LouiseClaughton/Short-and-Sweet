@@ -14,15 +14,11 @@ body {
 
 /*NavBar */
 
-.nav {
-    color: black;
-}
-
 .nav-link {
     font-family: Fredoka;
     font-size: 16px;
     margin-top: 30px;
-    color: white;
+    color: black;
     opacity: 1;
 }
 
@@ -34,15 +30,13 @@ body {
     filter: brightness(0.9);
 }
 
-
 /*Heading */
 
-#heading {
+.header {
+    background: url(images/Header\ Image.jpg);
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    background-image: url(images/Header\ Image.jpg);
-    object-fit: cover;
-    overflow: hidden;
     background-repeat: no-repeat;
 }
 
@@ -51,8 +45,9 @@ body {
     text-transform: uppercase;
     font-size: 64px;
     font-family: Watermelon;
-    margin:300px 20px 20px 0px;
+    margin-top: 10%;
     z-index: 1;
+    min-width: 500px;
 }
 
 #heading-text {
@@ -63,12 +58,12 @@ body {
     color: white;
     z-index: 1;
     transition-delay: 100ms;
+    min-width: 500px;
 }
 
 /*Products Section */
 
 #products {
-    margin-top: 150px;
     background-color: #FFFFF0;
     position: relative;
     z-index: 5;
@@ -104,6 +99,8 @@ body {
     font-family: Blinker;
     font-weight: 600;
     font-size: 32px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 /*Team Section */
@@ -167,9 +164,7 @@ body {
 }
 
 .button-pink:hover,
-.button-white:hover,
-.about:hover,
-.products:hover {
+.button-white:hover {
     filter: brightness(0.9);
     transition-duration: 0.5s;
 }
@@ -189,10 +184,13 @@ button.products {
     color:black;
     border: 7px solid #F28EE6;
     border-radius:30px;
-    margin:20px 0px 20px 0px;
     font-family: Fredoka;
     font-size: 18px;
     z-index: 2;
+}
+
+.button.products:hover {
+    background-image: linear-gradient(to right top, #f28ee6, #ed9be3, #e8a7e1, #e3b3dd, #debeda);
 }
 
 button.about {
@@ -200,7 +198,6 @@ button.about {
     color: black;
     border:7px solid white;
     border-radius:30px;
-    margin:20px 0px 20px 20px;
     font-family: Fredoka;
     font-size: 18px;
     z-index: 2;
