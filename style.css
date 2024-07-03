@@ -5,6 +5,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: #FFFFF0;
 }
 
 @font-face {
@@ -47,7 +48,6 @@ body {
     font-family: Watermelon;
     margin-top: 10%;
     z-index: 1;
-    min-width: 500px;
 }
 
 #heading-text {
@@ -58,7 +58,7 @@ body {
     color: white;
     z-index: 1;
     transition-delay: 100ms;
-    min-width: 500px;
+    max-width: 600px;
 }
 
 /*Products Section */
@@ -83,8 +83,8 @@ body {
 
 #testimonials {
     background-image: url("images/Testimonials\ Background.jpg");
-    width: auto;
-    height: 450px;
+    max-height: 450px;
+    object-fit: cover;
 }
 
 .heading {
@@ -99,8 +99,12 @@ body {
     font-family: Blinker;
     font-weight: 600;
     font-size: 32px;
-    margin-left: 150px;
-    margin-right: 150px;
+    color: white;
+}
+
+.body {
+    color: white;
+    font-family: Fredoka;
 }
 
 /*Team Section */
@@ -127,6 +131,16 @@ body {
 .team-img:hover {
     transform: translateY(-5%);
     transition: 1s;
+}
+
+.team-name {
+    font-family: Fredoka;
+    font-size: 16px;
+}
+
+.team-role {
+    font-family: Fredoka;
+    font-size: 14px;
 }
 
 /*Contact Section */
@@ -187,6 +201,7 @@ button.products {
     font-family: Fredoka;
     font-size: 18px;
     z-index: 2;
+    min-width: 135px;
 }
 
 .button.products:hover {
@@ -201,6 +216,7 @@ button.about {
     font-family: Fredoka;
     font-size: 18px;
     z-index: 2;
+    min-width: 135px;
 }
 
 /*Bootstrap */
@@ -224,20 +240,6 @@ button.about {
 .subheading {
     text-align:center;
     font-family: Fredoka;
-}
-
-.quote {
-    text-align: center;
-    justify-content: center;
-    color: white;
-    margin-top: 95px !important;
-}
-
-.bodytext {
-    text-align: center;
-    color: white;
-    font-family: Fredoka;
-    font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -276,4 +278,14 @@ h1, h2, h3, h4, h5, h6 {
 .show {
     opacity: 1;
     transform: translateX(0);
+}
+
+@media (max-width: 650px) {
+    .quote {
+        font-size: 25px;
+    }
+
+    .body {
+        font-size: 14px;
+    }
 }
