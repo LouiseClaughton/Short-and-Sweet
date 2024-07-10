@@ -74,6 +74,12 @@ body {
     font-size: 18px;
 }
 
+.product-img {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
 .product-img:hover {
     transform: translateY(-10%);
     transition: 1s;
@@ -126,6 +132,12 @@ body {
     padding-bottom: 50px;
     font-family: Fredoka;
     font-size: 16px;
+}
+
+.team-img {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    margin: 0 auto;
 }
 
 .team-img:hover {
@@ -219,6 +231,17 @@ button.about {
     min-width: 135px;
 }
 
+/* Products Page */
+#products-header {
+    background-image: url('images/Products-Background.png');
+    height: 750px;
+}
+
+.product-heading {
+    font-family: Blinker;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 /*Bootstrap */
 
 .carousel-control-prev-icon {
@@ -246,14 +269,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Fredoka;
     font-weight: 600;
     font-size: 18px;
-}
-
-/*Images */
-
-.gallery-img {
-    border: 1px solid transparent;
-    border-radius: 30px;
-    margin: 0 auto;
 }
 
 /*** Animations ***/

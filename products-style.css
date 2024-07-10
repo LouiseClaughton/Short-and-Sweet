@@ -20,13 +20,12 @@
 /*** Header Section ***/
 #header {
     background-image: url('images/Products-Background.png');
-    height: 70vh;
-    filter: brightness(0.8);
+    height: 750px;
 }
 
-#heading-title {
+.heading-title {
     font-family: Watermelon;
     font-size: 96px;
     color: white;
-    text-align: center;
+    margin-top: 20%;
 }
