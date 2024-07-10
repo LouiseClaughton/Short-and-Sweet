@@ -24,16 +24,7 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                  <li class="nav-item dropdown"> 
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Thunderstorm Candy</a></li>
-                      <li><a class="dropdown-item" href="#">Sunshine Bar</a></li>
-                      <li><a class="dropdown-item" href="#">Midnight Bliss</a></li>
-                      <li><a class="dropdown-item" href="#">Twilight Bites</a></li>
-                      <li><a class="dropdown-item" href="#">Gumdrop Gummies</a></li>
-                    </ul>
-                  </li>
+                  <a class="nav-link" href="products.html">Products</a>
                   <a class="nav-link" href="#">Meet the Team</a>
                   <a class="nav-link" href="#">Contact</a>
                 </div>
@@ -43,34 +34,36 @@
             
             
           <!--Header-->
-          <section>
-            <div class="header ps-5 pb-5 pe-5">
-              <div class="container-fluid">
-                <div class="row">
-                  <h1 id="heading-title" class="col hidden">Short & Sweet</h1>
-                </div>
-                <div class="row">
-                  <p id="heading-text" class="col hidden">
-                    Welcome to Short & Sweet, where the magic of childhood
-                    comes to life in every delectable treat. Indulge in our
-                    eclectic and unique confections, crafted by kids for kids.
-                    Our sweets will transport you to a world of pure
-                    imagination. Start your sweet adventure today!
-                  </p>
-               </div>
-               <div class="me-3">
-                  <button class="products col-2 hidden me-3 mb-4">Products</button>
-                  <button class="about col-2 hidden">About Us</button>
-                </div>
+          <section id="header">
+              <div class="ps-5 pb-5 pe-5">
+                  <div class="container-fluid my-auto">
+                      <div class="row align-items-center">
+                          <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+                              <h1 class="heading-title hidden justify-content-center">Short & Sweet</h1>
+                                  <div class="w-100"></div>
+                              <p id="heading-text" class="text-center">
+                                  Welcome to Short & Sweet, where the magic of childhood
+                                  comes to life in every delectable treat. Indulge in our
+                                  eclectic and unique confections, crafted by kids for kids.
+                                  Our sweets will transport you to a world of pure
+                                  imagination. Start your sweet adventure today!
+                              </p>
+                                  <div class="w-100"></div>
+                              <div class="me-3">
+                                  <button class="products col-2 hidden me-3 mb-4" href="products.html">Products</button>
+                                  <button class="about col-2 hidden" href="#">About Us</button>
+                              </div>
+                          </div>   
+                      </div>
+                  </div>
               </div>
-            </div>
             
         </section>
         
         <!-- Products -->
         <section id="products">
             <h2 class="title pt-5">FEATURED PRODUCTS</h2>
-            <p class="subheading"> Sweet treats designed by kids, for kids.</p>
+            <p class="subheading">Sweet treats designed by kids, for kids.</p>
 
             <div class="container-xl pb-5">
                 <!--Start of row-->
@@ -79,7 +72,7 @@
                     <!--Product 1-->
                     <div class="col-sm-6 col-md-4 col-xl pt-5 mt-xl-5"> <!--1 col on XS screens, 2 col on SM screens & above, 3 col on MD screens & above, 5 col on XL screens & above-->
                         <div class="d-flex align-items-center justify-content-center">
-                            <a href="#"><img src="images/Thunderstorm Candy (Large).png" alt="Thunderstorm Candy" class="gallery-img product-img img-fluid hidden"></a>
+                            <a href="#"><img src="images/Thunderstorm Candy (Large).png" alt="Thunderstorm Candy" class="product-img img-fluid hidden"></a>
                         </div>                 
                         <div class="text-center">
                             <h5 class="product-name me-4 mt-3">Thunderstorm Candy</h5>
@@ -90,7 +83,7 @@
                     <!--Product 2-->
                     <div class="col-sm-6 col-md-4 col-xl pt-sm-5">
                         <div class="d-flex align-items-center justify-content-center">
-                            <a href="#"><img src="images/Sunshine Bar.png" alt="Sunshine Bar" class="gallery-img product-img img-fluid hidden"></a>
+                            <a href="#"><img src="images/Sunshine Bar.png" alt="Sunshine Bar" class="product-img img-fluid hidden"></a>
                         </div>
                         <div class="text-center">
                             <h5 class="product-name me-4 mt-3">Sunshine Bar</h5>
@@ -101,7 +94,7 @@
                     <!--Product 3-->
                     <div class="col-sm-6 col-md-4 col-xl mt-xl-5 pt-md-5 pt-sm-5">
                         <div class="d-flex align-items-center justify-content-center">
-                            <a href="#"><img src="images/Midnight Bliss.png" alt="Midnight Bliss" class="gallery-img product-img img-fluid hidden"></a>
+                            <a href="#"><img src="images/Midnight Bliss.png" alt="Midnight Bliss" class="product-img img-fluid hidden"></a>
                         </div>
                         <div class="text-center">
                             <h5 class="product-name me-4 mt-3">Midnight Bliss</h5>
@@ -112,7 +105,7 @@
                     <!--Product 4-->
                     <div class="col-sm-6 col-md-4 col-xl pt-md-5 pt-sm-5">
                         <div class="d-flex align-items-center justify-content-center">
-                            <a href="#"><img src="images/Twilight Bites.png" alt="Twilight Bites" class="gallery-img product-img img-fluid hidden"></a>
+                            <a href="#"><img src="images/Twilight Bites.png" alt="Twilight Bites" class="product-img img-fluid hidden"></a>
                         </div>
                         <div class="text-center">
                             <h5 class="product-name me-4 mt-3">Twilight Bites</h5>
@@ -123,7 +116,7 @@
                     <!--Product 5-->
                     <div class="col-sm-6 col-md-4 col-xl pt-xl-5 pt-md-5 pt-sm-5 mt-xl-5"> <!--5rem padding top on SM and MD screens. 5 margin top on XL screens-->
                         <div class="d-flex align-items-center justify-content-center">
-                            <a href="#"><img src="images/Gumdrop Gummies (Large).png" alt="Gumdrop Gummies" class="gallery-img product-img img-fluid hidden"></a>
+                            <a href="#"><img src="images/Gumdrop Gummies (Large).png" alt="Gumdrop Gummies" class="product-img img-fluid hidden"></a>
                         </div>
                         <div class="text-center">
                             <h5 class="product-name me-4 mt-3">Gumdrop Gummies</h5>
@@ -203,7 +196,7 @@
                     <!-- Emma Smith -->
                     <div class="col-sm-6 col-md-3"><!-- Columns will stack on devices with a medium screen size (768px) and below -->
                         <div class="d-flex align-items-center justify-content-center"><!--Wrapping div on all images to center in columns-->
-                            <img src="images/Emma Smith.png" alt="Emma Smith" class="gallery-img team-img img-fluid hidden"><!--Img-fluid allows the image to shrink with screen size-->
+                            <img src="images/Emma Smith.png" alt="Emma Smith" class="team-img img-fluid hidden"><!--Img-fluid allows the image to shrink with screen size-->
                         </div>
                         <div class="text-center">
                             <h5 class="team-name">Emma Smith</h5>
@@ -214,7 +207,7 @@
                     <!-- Olivia Johnson -->
                     <div class="col-sm-6 col-md-3">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img src="images/Olivia Johnson.png" alt="Olivia Johnson" class="gallery-img team-img img-fluid hidden">
+                            <img src="images/Olivia Johnson.png" alt="Olivia Johnson" class="team-img img-fluid hidden">
                         </div>
                         <div class="text-center">
                             <h5 class="team-name">Olivia Johnson</h5>
@@ -225,7 +218,7 @@
                     <!-- Noah Taylor -->
                     <div class="col-sm-6 col-md-3">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img src="images/Noah Taylor.png" alt="Noah Taylor" class="gallery-img team-img img-fluid hidden">
+                            <img src="images/Noah Taylor.png" alt="Noah Taylor" class="team-img img-fluid hidden">
                         </div>
                         <div class="text-center">
                             <h5 class="team-name">Noah Taylor</h5>
@@ -236,7 +229,7 @@
                     <!-- Sophia Lee -->
                     <div class="col-sm-6 col-md-3">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img src="images/Sophia Lee.png" alt="Sophia Lee" class="gallery-img team-img img-fluid hidden">
+                            <img src="images/Sophia Lee.png" alt="Sophia Lee" class="team-img img-fluid hidden">
                         </div>
                         <div class="text-center">
                             <h5 class="team-name">Sophia Lee</h5>
@@ -251,7 +244,7 @@
                     <!-- Lily Chen -->
                     <div class="col-sm-6 col-md-3">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img src="images/Lily Chen.png" alt="Lily Chen" class="gallery-img team-img img-fluid hidden">
+                            <img src="images/Lily Chen.png" alt="Lily Chen" class="team-img img-fluid hidden">
                         </div>
                         <div class="text-center">
                             <h5 class="team-name">Lily Chen</h5>
@@ -262,7 +255,7 @@
                     <!-- Sunny White -->
                     <div class="col-sm-6 col-md-3">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img src="images/Sunny White.png" alt="Sunny White" class="gallery-img team-img img-fluid hidden">
+                            <img src="images/Sunny White.png" alt="Sunny White" class="team-img img-fluid hidden">
                         </div>
                         <div class="text-center">
                             <h5 class="team-name">Sunny White</h5>
@@ -273,7 +266,7 @@
                     <!-- Rachel Green -->
                     <div class="col-sm-6 col-md-3">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img src="images/Rachel Green.png" alt="Rachel Green" class="gallery-img team-img img-fluid hidden">
+                            <img src="images/Rachel Green.png" alt="Rachel Green" class="team-img img-fluid hidden">
                         </div>
                         <div class="text-center">
                             <h5 class="team-name">Rachel Green</h5>
@@ -284,7 +277,7 @@
                     <!-- Hannah Forte -->
                     <div class="col-sm-6 col-md-3">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img src="images/Hannah Forte.png" alt="Hannah Forte" class="gallery-img team-img img-fluid hidden">
+                            <img src="images/Hannah Forte.png" alt="Hannah Forte" class="team-img img-fluid hidden">
                         </div>
                         <div class="text-center">
                             <h5 class="team-name">Hannah Forte</h5>
