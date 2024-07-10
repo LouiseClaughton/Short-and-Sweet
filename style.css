@@ -38,7 +38,7 @@ body {
     z-index: 1;
 }
 
-#heading-text {
+.heading-text {
     text-align:left;
     margin: 20px 20px 20px 0px;
     font-family: Fredoka;
@@ -222,7 +222,7 @@ button.about {
 /* Products Page */
 #products-header {
     background-image: url('images/Products-Background.png');
-    height: 750px;
+    height: 700px;
 }
 
 .product-heading {
@@ -230,6 +230,14 @@ button.about {
     font-weight: 600;
     text-transform: uppercase;
 }
+
+/* Team Page */
+
+#team-header {
+    background: url(images/About\ Image.png);
+    height: 700px;
+}
+
 /*Bootstrap */
 
 .carousel-control-prev-icon {
