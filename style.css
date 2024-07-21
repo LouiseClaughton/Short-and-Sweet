@@ -136,11 +136,13 @@ body {
 .team-name {
     font-family: Fredoka;
     font-size: 16px;
+    margin: 20px;
 }
 
 .team-role {
     font-family: Fredoka;
     font-size: 14px;
+    margin-bottom: 30px;
 }
 
 /*Contact Section */
